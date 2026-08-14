@@ -1,0 +1,35 @@
+{
+  "name": "genpark-local-llm-fine-tuning-hardware-benchmark-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Local LLM fine-tuning orchestrator, hardware GPU memory profiler & benchmark.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "local-llm",
+    "fine-tuning",
+    "gpu-profiler",
+    "hardware-benchmark",
+    "ph-august14"
+  ],
+  "inputs": {
+    "model_name": {
+      "type": "string"
+    },
+    "dataset_samples": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "vram_usage_gb": {
+      "type": "number"
+    },
+    "tokens_per_sec": {
+      "type": "number"
+    },
+    "tuning_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
